@@ -1,6 +1,10 @@
 package com.example.videoapp.exceptions;
 
-public class VideoCasseteNotFoundException extends X {
-    public VideoCasseteNotFoundException(String s) {
+public class VideoCasseteNotFoundException extends Exception {
+    public VideoCasseteNotFoundException() {
+    }
+
+    public VideoCasseteNotFoundException(String message){
+        super(message);
     }
 }
