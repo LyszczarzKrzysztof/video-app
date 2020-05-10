@@ -16,6 +16,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/cassettes")
+@CrossOrigin
 public class VideoCassetteAPI {
 
 
@@ -52,7 +53,7 @@ public class VideoCassetteAPI {
             videoCassetteManager.deleteById(index);
             return new ResponseEntity(HttpStatus.NO_CONTENT);
         }else {
-            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
     }
 
